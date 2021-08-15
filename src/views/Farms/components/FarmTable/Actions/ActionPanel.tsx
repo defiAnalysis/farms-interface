@@ -110,8 +110,9 @@ const ActionPanel: React.FunctionComponent<ActionPanelProps> = ({ details, apr, 
     quoteTokenAdresses: quoteToken.address,
     tokenAddresses: token.address,
   })
+
   const lpAddress = farm.lpAddresses[process.env.REACT_APP_CHAIN_ID]
-  const bsc = `https://www.oklink.com/okexchain-test/address/${lpAddress}`
+  const bsc = `https://testnet.bscscan.com//address/${lpAddress}`
   // const info = `https://pancakeswap.info/pair/${lpAddress}`
   const isCommunityFarm = communityFarms.includes(token.symbol)
 
